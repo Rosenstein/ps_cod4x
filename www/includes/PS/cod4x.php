@@ -66,11 +66,6 @@ function worldid_noun($plural = false) {
 	return $plural ? $cms->trans('GUIDs') : $cms->trans('GUID');
 }
 
-function add_map_player_list_mod($map, $setup = array()) {
-	global $cms;
-	$this->add_map_player_list('touchedhostages', $setup + array('label' => $cms->trans("Most Hostages Touched")) );
-}
-
 function index_table_mod(&$table) {
 	global $cms;
 	$table->remove_columns($this->cod4x_remove_columns);
